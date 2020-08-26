@@ -12,7 +12,7 @@ RUN 	 cd /app \
 	 && wget https://github.com/arehbein-git/ppTag/archive/master.zip \
 	 && unzip master.zip \
 	 && mv ppTag-master pptag \
-	 && rm master.zip \
+	 && rm master.zip
 
 # Add start script
 COPY     /app/pptag/run.sh /app/
