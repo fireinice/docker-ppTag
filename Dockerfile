@@ -11,7 +11,7 @@ RUN      pip3 install --no-cache-dir -U pip && pip3 install --no-cache-dir plexa
 RUN 	 cd /app \
 	 && wget https://github.com/arehbein-git/ppTag/archive/master.zip \
 	 && unzip master.zip \
-	 && mv ppTag-master pptag
+	 && mv ppTag-master pptag \
 	 && rm master.zip \
 
 # Add start script
