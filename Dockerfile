@@ -17,4 +17,4 @@ RUN	 wget https://github.com/arehbein-git/ppTag/archive/master.zip \
 COPY  	 run.sh .
 RUN      chmod +x run.sh
 
-CMD 	 [ "run.sh" ]
+CMD 	 [ "/app/run.sh" ]
