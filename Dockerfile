@@ -11,10 +11,10 @@ RUN	 mkdir /app \
 	 && wget https://github.com/arehbein-git/ppTag/archive/master.zip \
 	 && unzip master.zip \
 	 && rm master.zip \ 
-	 && mv ppTag-master pptag \
-	 && cp /app/pptag/run.sh /app/
+	 && mv ppTag-master pptag
 
 # Add start script
+COPY  	 run.sh /app
 RUN      chmod +x /app/run.sh
 
 CMD 	 [ "/app/run.sh" ]
